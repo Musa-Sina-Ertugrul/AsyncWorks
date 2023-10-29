@@ -55,15 +55,11 @@
     <h1>Result Table</h1>
     <table>
         <tr>
-            <th>Work Name</th>
-            <th>Starting Minute</th>
+            <th>Result</th>
         </tr>
-        {% for result in session["results"] %}
         <tr>
-            <td>{{ result[0] }}</td>
-            <td>{{ result[1] }}</td>
+            <td>{{ session["results"] }} minutes</td>
         </tr>
-        {% endfor %}
     </table>
     <div class="return-button">
         <a href="/">Return to Main Page</a>
